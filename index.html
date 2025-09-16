@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ashish Raj — Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+<div class="My-profile">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <span class="logo-sign">Ashish Raj | Portfolio</span>
+      </div>
+
+      <div class="search-container">
+        <input
+          id="site-search"
+          type="text"
+          class="search-input"
+          placeholder="Search by name, project, skill..."
+          aria-label="Search profile"
+        >
+        <button class="search-button" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="nav-buttons" aria-label="Primary">
+        <button class="nav-btn" data-action="browse">BROWSE ▼</button>
+        <button class="nav-btn" data-action="signin">SIGN IN</button>
+        <button class="nav-btn" data-action="edit">EDIT PROFILE</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Profile top -->
+  <div class="profile-hero" role="banner">
+    <div class="profile-content">
+      <div class="profile-left">
+        <img src="https://github.com/AshishRaj97.png" alt="Ashish Raj" class="profile-image">
+
+        <div class="profile-info">
+          <h1 class="profile-name">Ashish Raj</h1>
+
+          <div class="profile-titles">
+            <p class="title-line">Undergraduate Student — B.Sc. (Hons.) in Computer Science &amp; Data Analytics</p>
+            <p class="title-line">Indian Institute of Technology Patna (IIT Patna)</p>
+            <p class="title-line">2rd Year (2025)</p>
+          </div>
+
+          <p class="department">Department: Computer Science &amp; Data Analytics</p>
+          <p class="leave-status">GPA ( 1st, 2nd , and 3rd semesters): 8.95 | 9.00 | 9.33 GPA</p>
+        </div>
+      </div>
+
+      <div class="profile-actions" aria-hidden="false">
+        <a class="action-btn" href="https://github.com/AshishRaj97" target="_blank" rel="noopener noreferrer">VIEW GITHUB</a>
+        <a class="action-btn" href="https://in.linkedin.com/in/ashish-raj-327596306" target="_blank" rel="noopener noreferrer">VIEW LINKEDIN</a>
+        <a class="action-btn" href="#" id="download-cv">DOWNLOAD CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content">
+
+    <!-- Tabs -->
+    <nav class="tab-nav" role="tablist" aria-label="Profile sections">
+      <button class="tab-btn active" role="tab" aria-selected="true" data-target="bio">BIO</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-target="research">RESEARCH &amp; PROJECTS</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-target="teaching">TRAINING &amp; COURSES</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-target="publications">PUBLICATIONS &amp; AWARDS</button>
+    </nav>
+
+    <div class="content-area">
+
+      <!-- Left / main panels -->
+      <div class="panels" >
+
+        <!-- BIO panel -->
+        <section id="panel-bio" class="tab-panel" role="tabpanel">
+          <h2 class="bio-title">Bio</h2>
+          <p class="bio-text">
+            I am <strong>Ashish Raj</strong>, a 3rd-year undergraduate pursuing a Bachelor of Science (Hons.) in Computer Science and Data Analytics at the Indian Institute of Technology Patna (IIT Patna).
+            My academic journey has shaped my expertise in both foundational computer science and advanced data analytics techniques.
+          </p>
+
+          <p>
+            I am passionate about <em>data-driven problem solving</em>, combining statistical methods and machine learning with programming skills to deliver insights and solutions. 
+            I enjoy working on real-world datasets, cleaning and transforming them into structured formats, and applying visualization to communicate findings effectively.
+          </p>
+
+          <h3 style="margin-top:18px;">Key skills</h3>
+          <ul>
+            <li>Programming: Python, C++, SQL, HTML &amp; CSS</li>
+            <li>Libraries &amp; Tools: Numpy, Pandas, Matplotlib, Scikit-learn, TensorFlow, PyTorch</li>
+            <li>Data Handling: Data cleaning, preprocessing, feature engineering</li>
+            <li>Version Control &amp; Productivity: Git, VS Code, Excel</li>
+          </ul>
+
+          <h3 style="margin-top:18px;">Selected projects</h3>
+          <ul>
+            <li><a href="https://github.com/AshishRaj97/adidas-sales-analysis" target="_blank" rel="noopener noreferrer">Adidas Sales Analysis</a> — sales data exploration & insights with visualization dashboards.</li>
+            <li><a href="https://github.com/AshishRaj97/Layout-Recognition-YOLOv8" target="_blank" rel="noopener noreferrer">Layout Recognition using YOLOv8</a> — document layout detection using deep learning.</li>
+            <li>RAG-based chatbot assignment using LangChain &amp; Python — integrating retrieval and LLMs.</li>
+          </ul>
+        </section>
+
+        <!-- RESEARCH panel -->
+        <section id="panel-research" class="tab-panel" role="tabpanel" hidden>
+          <h2>Research &amp; Projects</h2>
+          <p>
+            I have engaged in projects that blend theory with practice, ranging from environmental research to advanced machine learning.
+          </p>
+          <ul>
+            <li><strong>Wastewater Treatment Research:</strong> Analyzed water quality data, applied statistical models, and contributed to a research project focused on treatment methods.</li>
+            <li><strong>Layout Recognition (YOLOv8):</strong> Developed a computer vision pipeline to identify sections in scanned documents and academic papers.</li>
+            <li><strong>Adidas Sales Analysis:</strong> Conducted EDA, built interactive charts, and generated insights on sales trends across regions.</li>
+            <li><strong>RAG-based Chatbot:</strong> Constructed an academic chatbot powered by LangChain and Python to provide contextual answers from a dataset.</li>
+          </ul>
+
+          <h3 style="margin-top:16px;">Open-source Contributions</h3>
+          <p>
+            I participated in <strong>Apertre 2.0</strong>, a 30-day open-source initiative (2024), and plan to contribute to major libraries such as <code>pandas</code> by resolving issues and improving documentation.
+          </p>
+        </section>
+
+        <!-- TRAINING panel -->
+        <section id="panel-teaching" class="tab-panel" role="tabpanel" hidden>
+          <h2>Training &amp; Coursework</h2>
+          <ul>
+            <li>HubSpot CRM Training — certified</li>
+            <li>Google Machine Learning Crash Course: Fairness — completed</li>
+            <li>Coursework at IIT Patna:
+              <ul>
+                <li>Data Structures and Algorithms</li>
+                <li>Database Management Systems</li>
+                <li>Statistics for Data Science</li>
+                <li>Machine Learning</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3 style="margin-top:16px;">Knowledge Sharing</h3>
+          <p>
+            Share expertise with peers to help them resolve project issues, grasp machine learning concepts, and utilize tools like Pandas and Matplotlib effectively.          </p>
+        </section>
+
+        <!-- PUBLICATIONS / AWARDS panel -->
+        <section id="panel-publications" class="tab-panel" role="tabpanel" hidden>
+          <h2>Publications &amp; Awards</h2>
+          <ul>
+            <li><strong>Dean's List Certificate</strong> — for consistent academic excellence</li>
+            <li><strong>Apertre 2.0 Recognition</strong> — for contributions to collaborative open-source projects (2024)</li>
+          </ul>
+
+          <h3 style="margin-top:14px;">Notes</h3>
+          <p>
+            I am currently building a portfolio of research and applied projects. Formal publications are a future goal as I advance in academic research and collaborations.
+          </p>
+        </section>
+
+      </div> <!-- /.panels -->
+
+      <!-- Right / contact sidebar -->
+      <aside class="contact-sidebar" >
+        <h3 class="contact-title">CONTACT</h3>
+
+        <div class="contact-item">
+          <div class="contact-info">
+            <p class="contact-label">Name</p>
+            <p class="contact-detail"><strong>Ashish Raj</strong></p>
+
+            <p class="contact-label" style="margin-top:8px">GitHub</p>
+            <p class="contact-detail"><a href="https://github.com/AshishRaj97" target="_blank" rel="noopener noreferrer">github.com/AshishRaj97</a></p>
+
+            <p class="contact-label" style="margin-top:8px">LinkedIn</p>
+            <p class="contact-detail"><a href="https://in.linkedin.com/in/ashish-raj-327596306" target="_blank" rel="noopener noreferrer">linkedin.com/in/ashish-raj-327596306</a></p>
+
+            <p class="contact-label" style="margin-top:8px">Location</p>
+            <p class="contact-detail">India</p>
+
+            <p class="contact-label" style="margin-top:8px">Email</p>
+            <p class="contact-detail">(available via LinkedIn)</p>
+          </div>
+        </div>
+
+        <div class="quick-links" style="margin-top:18px;">
+            <h4>Quick links</h4>
+            <ul>
+                <li><a href="https://github.com/AshishRaj97/adidas-sales-analysis" target="_blank" rel="noopener noreferrer">Adidas Sales Analysis</a></li>
+                <li><a href="https://github.com/AshishRaj97/Layout-Recognition-YOLOv8" target="_blank" rel="noopener noreferrer">Layout Recognition</a></li>
+            </ul>
+        </div>
+
+      </aside>
+
+    </div> <!-- /.content-area -->
+  </div> <!-- /.main-content -->
+
+  <footer style="text-align:center; padding:22px 0; color:#666;">
+    © 2025 Ashish Raj — Built with ❤️ | ...
+  </footer>
+
+</div> <!-- /.stanford-profile -->
+
+<script>
+  // Tab switching
+  (function () {
+    function qsa(sel, root = document) { return Array.from(root.querySelectorAll(sel)); }
+
+    const tabs = qsa('.tab-btn');
+    const panels = qsa('.tab-panel');
+
+    function activate(target) {
+      tabs.forEach(t => {
+        const is = t.dataset.target === target;
+        t.classList.toggle('active', is);
+        t.setAttribute('aria-selected', is ? 'true' : 'false');
+      });
+      panels.forEach(p => {
+        const show = p.id === 'panel-' + target;
+        p.hidden = !show;
+      });
+    }
+
+    tabs.forEach(t => {
+      t.addEventListener('click', function () {
+        activate(this.dataset.target);
+      });
+    });
+
+    if (tabs.length) {
+      activate(tabs[0].dataset.target);
+    }
+  })();
+</script>
+
+</body>
+</html>
